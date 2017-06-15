@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/hello"
+    tools:context="com.dbm.dbmuseum.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:id="@+id/tvTitulo"/>
+
+
+
+    <EditText
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:hint="id"
+        android:id="@+id/etId"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    <!--
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etId"
+            android:layout_margin="10dp"
+            android:hint="nombre"
+            android:id="@+id/etNombre"
+            />
+
+            -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="coleccion"
+            android:id="@+id/etColeccion"
+            android:layout_below="@+id/etId"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+
+            android:id="@+id/btnConsultar"
+            android:layout_above="@+id/etColeccion"
+            android:layout_toRightOf="@+id/etId" />
+
+    <ListView android:id="@+id/listView1" android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/etColeccion"/>
+        <!--
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View"
+                android:layout_below="@+id/btnConsultar"
+
+                android:id="@+id/btnView"/>
+    -->
+
+
+    </RelativeLayout>
