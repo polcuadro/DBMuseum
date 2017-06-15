@@ -186,10 +186,10 @@ public class MainActivity extends AppCompatActivity {
 
             result = result.replaceAll("[^\\x20-\\x7e]", "");
 
-            /*String party2 = parts[3];
+           String party2 = parts[3];
             party2 = party2.replace("\"", "");
             party2 = party2.replace("[", "");
-            party2 = party2.replace("]", "");*/
+            party2 = party2.replace("]", "");
             Log.d("com.dbm.dbmuseum","hello2");
             parts[0] = parts[0].substring(0,4);
             if (parts[0].equals("buit")) {
