@@ -190,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
             party2 = party2.replace("\"", "");
             party2 = party2.replace("[", "");
             party2 = party2.replace("]", "");*/
-           // Log.d("com.dbm.dbmuseum","hello2");
+            Log.d("com.dbm.dbmuseum","hello2");
             parts[0] = parts[0].substring(0,4);
             if (parts[0].equals("buit")) {
 
